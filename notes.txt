@@ -1,0 +1,3 @@
+JSON Data: https://thentwrk.s3.amazonaws.com/static/interview/demodata.json
+Figma Wireframe: https://www.figma.com/proto/ueJXJfQ3WcaDcpXRN9TKOC/Technical-Coding?node-id=3-4&scaling=scale-down
+
