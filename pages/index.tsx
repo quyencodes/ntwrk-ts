@@ -1,6 +1,29 @@
 import Head from 'next/head';
+import { useState, useEffect } from 'react';
+import S3LINK from '@/public/index';
+import axios from 'axios';
+import dotenv from 'dotenv';
+dotenv.config();
+
+const fetchData = async () => {
+  try {
+    const {
+      data: { products },
+    } = await axios.get('http://localhost:8080/fakeroute');
+
+    console.log(products);
+  } catch (err) {
+    console.log(err);
+  }
+};
 
 export default function Home() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <>
       <Head>
