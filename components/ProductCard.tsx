@@ -5,14 +5,16 @@ interface Props {
   key: number;
   index: number;
   inStock: boolean;
+  handleVariantInventoryTest: (variant: Variants) => boolean;
 }
 
-export default function ProductCard({ product, key, index, inStock }: Props) {
-  const handleVariantInventoryTest = (variant: Variants) =>
-    !inStock
-      ? variant.available_inventory > 0
-      : variant.available_inventory >= 0;
-
+export default function ProductCard({
+  product,
+  key,
+  index,
+  inStock,
+  handleVariantInventoryTest,
+}: Props) {
   return (
     <li className="mb-4" key={index}>
       <h4 className="mb-2">{product.title}</h4>

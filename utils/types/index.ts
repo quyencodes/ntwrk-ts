@@ -14,3 +14,9 @@ export interface Product {
   title: string;
   variants: Array<Variants>;
 }
+
+export interface SortingOptions {
+  orderDefault: boolean;
+  orderAtoZ: boolean;
+  orderZtoA: boolean;
+}
