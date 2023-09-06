@@ -33,11 +33,11 @@ export default function Sorting({ sortingOptions, setSortingOptions }: Props) {
 
   const displaySortingOptions = (option) => {
     if (option == 'orderDefault') {
-      return 'default';
-    } else if (option == 'orderAtoZ') {
       return 'A -> Z';
-    } else if (option == 'orderZtoA') {
+    } else if (option == 'orderAtoZ') {
       return 'Z -> A';
+    } else if (option == 'orderZtoA') {
+      return 'default';
     }
   };
 

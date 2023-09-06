@@ -2,21 +2,19 @@ import { Product, Variants } from '@utils/types';
 
 interface Props {
   product: Product;
-  key: number;
+  key1: number;
   index: number;
-  inStock: boolean;
   handleVariantInventoryTest: (variant: Variants) => boolean;
 }
 
 export default function ProductCard({
   product,
-  key,
+  key1,
   index,
-  inStock,
   handleVariantInventoryTest,
 }: Props) {
   return (
-    <li className="mb-4" key={index}>
+    <li className="mb-4" key={key1}>
       <h4 className="mb-2">{product.title}</h4>
       <div className="flex flex-row gap-6 flex-wrap">
         {product.variants
