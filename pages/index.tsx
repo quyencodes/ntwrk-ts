@@ -25,7 +25,7 @@ export default function Home() {
 
   const fetchProductsData = () => {
     return axios
-      .get('https://thentwrk.s3.amazonaws.com/static/interview/demodata.json')
+      .get('https://streetwear-2023.s3.us-west-1.amazonaws.com/data.json')
       .then(({ data: { products } }) => {
         console.log(products); // writes to the console what the data looks like from API call
         setData(products);
