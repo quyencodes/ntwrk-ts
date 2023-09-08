@@ -1,3 +1,4 @@
 JSON Data: https://thentwrk.s3.amazonaws.com/static/interview/demodata.json
+JSON Data from Personal S3 Bucket: https://streetwear-2023.s3.us-west-1.amazonaws.com/data.json
 Figma Wireframe: https://www.figma.com/proto/ueJXJfQ3WcaDcpXRN9TKOC/Technical-Coding?node-id=3-4&scaling=scale-down
 
